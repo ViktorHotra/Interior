@@ -10,11 +10,65 @@
     box-sizing: border-box;
 }
 
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 50px;
+    height: 100%;
+    padding: 25px 10px;
+    background-color: #fff;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.8s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    /* overflow-x: hidden; */
+}
+
+.sidebar__arrow {
+    font-size: 30px;
+    color: #363535;
+    margin-bottom: 25px;
+}
+
+.sidebar__arrow i {
+    transition: transform 0.8s ease-in-out;
+}
+
+.sidebar:hover .sidebar__arrow i {
+    transform: rotateY(180deg);
+}
+
+.sidebar a {
+    /* position: relative; */
+    /* left: -50px; */
+    text-decoration: none;
+    display: block;
+    transition: left 0.8s ease-in-out;
+    margin-bottom: 15px;
+    /* vertical-align: middle; */
+}
+
+.sidebar__icon {
+    font-size: 20px;
+    color: #363535;
+}
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover + .page {
+    margin-left: 200px;
+}
+
 .page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: margin 0.8s ease-in-out;
 }
 
 .page__navbtn {
@@ -124,7 +178,7 @@
     background-color: #fff;
     border-radius: 50%;
     margin-right: 15px;
-    color: #000;
+    color: #363535;
     box-shadow: 0 1px 5px #575555;
     transition: transform 0.5s ease;
     font-size: calc(16px + 1 * ((100vw - 320px) / (1400 - 320)));
@@ -148,7 +202,7 @@
     font-family: 'Anton', sans-serif;
     font-size: calc(24px + 6 * ((100vw - 320px) / (1400 - 320)));
     margin-bottom: 20px;
-    color: #2c2c2c;
+    color: #363535;
 }
 
 @keyframes fade-in {
@@ -308,13 +362,21 @@ footer {
         flex: 0 1 50%;
         padding: 0 10px;
     }
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        display: block;
+    }
+
+    .page {
+        margin-left: 50px;
+    }
 
     .page__navbtn {
         display: none;
     }
-}
 
-@media (min-width: 992px) {
     .design__item-wrapper {
         flex: 0 1 33.333%;
     }
@@ -326,7 +388,7 @@ footer {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 2000px) {
     .design__item-wrapper {
         flex: 0 1 20%;
     }
