@@ -382,7 +382,9 @@ footer {
     }
 
     .sidebar span {
+        /* margin-right: 15px; */
         /* text-align: right; */
+        /* display: none; */
     }
 
     /* .sidebar__div {
@@ -391,11 +393,13 @@ footer {
     } */
 
     .sidebar__icon {
-        width: 30px;
+        /* width: 30px; */
         margin-left: 15px;
+        flex: 0 0 30px;
     }
 
     .sidebar:hover span {
+        /* display: block; */
     }
 
     .page {
