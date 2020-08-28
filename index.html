@@ -5,221 +5,307 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Responsive Design & Animations</title>
+        <link rel="stylesheet" href="/css/style.css" />
         <script
             src="https://kit.fontawesome.com/a3a576365d.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="/css/style.css" />
     </head>
 
     <body>
+        <a class="navbtn" href=""><i class="fas fa-expand-arrows-alt"></i></a>
         <div class="sidebar">
-            <div class="sidebar__arrow"><i class="fas fa-arrow-left"></i></div>
-            <a href="#"><span>Home</span><i class="sidebar__icon fas fa-home"></i>
-            </a>
-            <a href="#"><span>Office</span><i class="sidebar__icon fas fa-briefcase"></i>
-            </a>
-            <a href="#"><span>Admin</span><i class="sidebar__icon fas fa-unlock-alt"></i>
-            </a>
-            <a href="#"><span>Profile</span><i class="sidebar__icon fas fa-user"></i>
-            </a>
-            <a href="#"><span>Stats</span><i class="sidebar__icon fas fa-sort-amount-up-alt"></i>
-            </a>
-            <a href="#"><span>Users</span><i class="sidebar__icon fas fa-users"></i>
-            </a>
+            <div class="arrow"><i class="fas fa-arrow-left"></i></div>
+            <nav class="sidebar-menu">
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Home</span
+                    ><i class="sidebar-menu__icon fas fa-home"></i>
+                </a>
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Office</span
+                    ><i class="sidebar-menu__icon fas fa-briefcase"></i>
+                </a>
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Admin</span
+                    ><i class="sidebar-menu__icon fas fa-unlock-alt"></i>
+                </a>
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Profile</span
+                    ><i class="sidebar-menu__icon fas fa-user"></i>
+                </a>
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Stats</span
+                    ><i
+                        class="sidebar-menu__icon fas fa-sort-amount-up-alt"
+                    ></i>
+                </a>
+                <a class="sidebar-menu__item" href="#"
+                    ><span class="sidebar-menu__text">Users</span
+                    ><i class="sidebar-menu__icon fas fa-users"></i>
+                </a>
+            </nav>
         </div>
-        <div class="page">
-            <a class="page__navbtn" href=""><i class="fas fa-expand-arrows-alt"></i></a>
-            <div class="container">
-                <header class="header">
-                    <h1 class="header__title">Home page</h1>
-                    <div class="header__navbar">
+        <div class="page-wrapper">
+            <div class="page-inner">
+                <header>
+                    <div class="header__left">
+                        <a href="#"><h1 class="logo">Home page</h1></a>
+                    </div>
+                    <div class="header__right">
                         <input
-                            class="header__search"
+                            class="search"
                             type="search"
                             name="search"
                             placeholder="Search"
                             id="search"
                         />
-                        <div class="header__menu">
-                            <a class="header__link" href="#"
+                        <nav class="top-menu">
+                            <a class="top-menu__item" href="#"
                                 ><i class="fas fa-cog"></i
                             ></a>
-                            <a class="header__link" href="#"
+                            <a class="top-menu__item" href="#"
                                 ><i class="fas fa-user"></i
                             ></a>
-                            <a class="header__link" href="#"
+                            <a class="top-menu__item" href="#"
                                 ><i class="fas fa-wallet"></i
                             ></a>
-                        </div>
+                        </nav>
                     </div>
                 </header>
-                <main class="design">
-                    <h2 class="design__title">Design</h2>
-                    <div class="design__items">
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-1.jpg" alt="">
+                <main>
+                    <h2 class="title">Design</h2>
+                    <section class="grid">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-1.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, est.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Aut, est.
+                                    </p>
+                                </div>
+                                <div class="card__bottom">
+                                    <a class="card__btn" href="#"
+                                        >Read more</a
+                                    >
+                                </div>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-2.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-2.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae molestias delectus, aut, saepe quos tempora repudiandae dolore possimus nihil quo ipsam quibusdam reprehenderit quod cupiditate.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Molestiae molestias
+                                        delectus, aut, saepe quos tempora
+                                        repudiandae dolore possimus nihil quo
+                                        ipsam quibusdam reprehenderit quod
+                                        cupiditate.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-3.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-3.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempore, fuga et cupiditate at quis rerum aperiam dolor ipsam reiciendis accusamus maiores ipsum officiis. Animi.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Nihil, tempore, fuga
+                                        et cupiditate at quis rerum aperiam
+                                        dolor ipsam reiciendis accusamus maiores
+                                        ipsum officiis. Animi.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-4.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-4.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi similique cupiditate sed soluta suscipit! Libero, harum! Dignissimos aliquid in molestiae minus, doloremque perferendis voluptate laboriosam.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Quasi similique
+                                        cupiditate sed soluta suscipit! Libero,
+                                        harum! Dignissimos aliquid in molestiae
+                                        minus, doloremque perferendis voluptate
+                                        laboriosam.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-5.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-5.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde tempora doloremque dolorum quaerat reiciendis a facilis! Consequuntur minus neque autem fugit a, facere molestias?</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Rem unde tempora
+                                        doloremque dolorum quaerat reiciendis a
+                                        facilis! Consequuntur minus neque autem
+                                        fugit a, facere molestias?
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-6.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-6.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quo enim molestiae minus earum, laborum atque deserunt deleniti, recusandae sequi, totam magni dolorem labore ut?</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Nemo quo enim
+                                        molestiae minus earum, laborum atque
+                                        deserunt deleniti, recusandae sequi,
+                                        totam magni dolorem labore ut?
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-7.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-7.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illo veniam accusamus consectetur quae ipsum non aperiam provident qui hic earum distinctio exercitationem, alias in.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Placeat illo veniam
+                                        accusamus consectetur quae ipsum non
+                                        aperiam provident qui hic earum
+                                        distinctio exercitationem, alias in.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-8.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-8.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum neque soluta quae optio eum! Enim doloribus sunt alias. Laudantium velit ipsum consequuntur sapiente repudiandae hic.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dolorum neque soluta
+                                        quae optio eum! Enim doloribus sunt
+                                        alias. Laudantium velit ipsum
+                                        consequuntur sapiente repudiandae hic.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-9.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-9.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi dolor officia voluptatibus at laborum quo adipisci similique quis, ad consequuntur! Atque consequuntur itaque aliquid!</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Et eligendi dolor
+                                        officia voluptatibus at laborum quo
+                                        adipisci similique quis, ad
+                                        consequuntur! Atque consequuntur itaque
+                                        aliquid!
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-10.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-10.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quo. Quas, cupiditate eveniet quod laboriosam facere minima, assumenda obcaecati itaque pariatur molestias, beatae veniam fuga.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Magnam, quo. Quas,
+                                        cupiditate eveniet quod laboriosam
+                                        facere minima, assumenda obcaecati
+                                        itaque pariatur molestias, beatae veniam
+                                        fuga.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                        <div class="design__item-wrapper">
-                            <div class="design__item">
-                                <div class="design__image">
-                                    <img src="/images/picture-11.jpg" alt="">
+                        <div class="grid__item">
+                            <div class="card">
+                                <div class="card__top">
+                                    <img
+                                        src="/images/picture-11.jpg"
+                                        alt="Тут могла быть ваша реклама"
+                                    />
                                 </div>
-                                <div class="design__desc"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo, incidunt necessitatibus velit dolorum sed sint, fugit iure excepturi maxime, commodi distinctio laudantium cum illum.</p></div>
-                                <a class="design__btn" href="#">Read more</a>
+                                <div class="card__main">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Facilis explicabo,
+                                        incidunt necessitatibus velit dolorum
+                                        sed sint, fugit iure excepturi maxime,
+                                        commodi distinctio laudantium cum illum.
+                                    </p>
+                                </div>
+                                <a class="card__btn" href="#">Read more</a>
                             </div>
                         </div>
-                    </div>
-                </main">
+                    </section>
+                </main>
             </div>
-
-            <footer><h3 class="footer__text">All rights reserved, 2020</h3></footer>
+            <footer>
+                <h3 class="copyright">All rights reserved, 2020</h3>
+            </footer>
         </div>
-        <!-- <div class="page-wrapper">
-            <div class="page-left">
-                <ul>
-                    <li>
-                        <a href=""
-                            >Home</i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><span>Office</span
-                            ><i class="sidebar__icon fas fa-briefcase"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><span>Admin</span
-                            ><i class="sidebar__icon fas fa-unlock-alt"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><span>Profile</span
-                            ><i class="sidebar__icon fas fa-user"></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><span>Stats</span
-                            ><i
-                                class="sidebar__icon fas fa-sort-amount-up-alt"
-                            ></i
-                        ></a>
-                    </li>
-                    <li>
-                        <a href=""
-                            ><span>Users</span
-                            ><i class="sidebar__icon fas fa-users"></i
-                        ></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-right">
-                <p class="text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Cum a ratione aliquam esse temporibus exercitationem sequi,
-                    rem quidem quaerat ab veniam cupiditate dicta minima illo
-                    voluptates voluptas veritatis, in natus! Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Totam culpa
-                    temporibus quibusdam soluta dolorem aspernatur, in, tempora
-                    a distinctio ad repellat ratione fuga ea corporis nihil
-                    voluptates! Rerum, unde autem. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Totam culpa temporibus
-                    quibusdam soluta dolorem aspernatur, in, tempora a
-                    distinctio ad repellat ratione fuga ea corporis nihil
-                    voluptates! Rerum, unde autem.
-                </p>
-            </div>
-        </div> -->
     </body>
 </html>
