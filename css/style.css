@@ -378,6 +378,7 @@ footer {
         white-space: nowrap;
         background-color: var(--secondary-clr);
         box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
         transition: all 0.8s ease-in-out;
     }
 
@@ -439,7 +440,7 @@ footer {
 
     .sidebar-menu__item:hover {
         color: var(--primary-clr);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease;
     }
 
     .sidebar-menu__icon {
