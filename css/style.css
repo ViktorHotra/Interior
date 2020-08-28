@@ -471,3 +471,22 @@ footer {
         flex: 0 1 20%;
     }
 }
+
+/* experimental fix*/
+@media (min-width: 3000px) {
+    body {
+        max-width: 3000px;
+        margin: 0 auto;
+        will-change: transform;
+    }
+
+    .sidebar-menu__text {
+        opacity: 0;
+        transition: opacity 0.2s ease 0.3s;
+    }
+
+    .sidebar:hover .sidebar-menu__text {
+        opacity: 1;
+    }
+}
+/* end of experimental fix*/
