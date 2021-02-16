@@ -1,12 +1,10 @@
-# Web-Page-Creator
-
-Simple vanilla JS usage for creating web page elements
-
-Firebase Hosting
-https://web-page-creator.web.app/
+# Interior
+HTML / CSS practice
+Responsive Design
+Animations
 
 Netlify Hosting
-https://keen-morse-378d71.netlify.app
+https://musing-euler-bba4d4.netlify.app/#
 
 
 
